@@ -101,12 +101,12 @@ Data disimpan di **3 array/list terpisah sesuai jenisnya**: `daftarAnimasi` (isi
     - studio_bioskop : string
 
 2. **Film** (parent, kelas biasa/concrete)
-    - id_film : int — identifier unik, dicek agar tidak duplikat
+    - id_film : int identifier unik, dicek agar tidak duplikat
     - judul : string
     - genre : string
     - durasi : int (menit) divalidasi tidak boleh negatif
     - harga : int (rupiah) divalidasi harus lebih dari 0
-    - jadwalTayang : JadwalTayang — composition, dibangun di constructor Film
+    - jadwalTayang : JadwalTayang composition, dibangun di constructor Film
 
 3. **FilmAnimasi** (extends Film)
     - studio_animasi : string
@@ -158,15 +158,15 @@ Semua program memvalidasi input non-numeric pada field angka (ID, durasi, harga,
 
 ## Output program C++
 ### Data awal (sebelum penambahan)
-<img src="cpp/Dokumentasi/data-awal-cpp.png" alt="data awal cpp">
+<img src="cpp/Dokumentasi/data awal cpp.png" alt="data awal cpp">
 <br>
 
 ### Tambah data beserta error handling input
-<img src="cpp/Dokumentasi/tambah-data-dan-error-handling-cpp.png" alt="tambah data dan error handling cpp">
+<img src="cpp/Dokumentasi/tambah data dan error handling cpp.png" alt="tambah data dan error handling cpp">
 <br>
 
 ### Data akhir (sesudah penambahan)
-<img src="cpp/Dokumentasi/data-akhir-cpp.png" alt="data akhir cpp">
+<img src="cpp/Dokumentasi/data akhir cpp.png" alt="data akhir cpp">
 <br>
 
 ## Output program Python
