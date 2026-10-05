@@ -59,7 +59,7 @@ Program dibuat dalam **C++ dan Python** (yang wajib), dan ditambah **Java** seba
 
 # Diagram Konsep
 
-<img src="Dokumentasi/diagram TP3.png" alt="diagram TP3">
+<img src="dokumentasi/diagram TP3.png" alt="diagram TP3">
 <br>
 
 1. `JadwalTayang`
@@ -84,14 +84,14 @@ Program dibuat dalam **C++ dan Python** (yang wajib), dan ditambah **Java** seba
 
 ### Alasan pemilihan class & relasi
 
-**Composition — `Film` punya `JadwalTayang`**
+**Composition `Film` punya `JadwalTayang`**
 Satu jadwal tayang (tanggal, jam, studio) cuma bermakna kalau melekat pada satu film tertentu, tidak pernah berdiri sendiri, tidak dibagi ke film lain, dan dibuat bersamaan saat objek `Film` dibuat (lihat constructor `Film`, yang langsung membangun `JadwalTayang` di dalamnya). Ini beda dengan *aggregation*, yang membolehkan objek yang "dimiliki" tetap hidup independen atau dipakai bareng beberapa pemilik.
 
-**Hierarchical Inheritance — `Film` sebagai parent dari 3 anak sejajar**
+**Hierarchical Inheritance `Film` sebagai parent dari 3 anak sejajar**
 `FilmAnimasi`, `FilmAksi`, dan `FilmDokumenter` masing-masing menspesialisasikan `Film` ke arah yang berbeda, tapi semuanya langsung mewarisi dari parent yang sama (sejajar, bukan berantai seperti multilevel inheritance di tugas sebelumnya). Tiap subclass memakai ulang `tampilkandata()` milik `Film` (pemanggilan method biasa, bukan override) lalu menambahkan cetakan atribut miliknya sendiri lewat method dengan nama unik (`tampilkandataanimasi()`, `tampilkandataaksi()`, `tampilkandatadokumenter()`).
 
 **Array of Object**
-Data disimpan di **3 array/list terpisah sesuai jenisnya**: `daftarAnimasi` (isi `FilmAnimasi`), `daftarAksi` (isi `FilmAksi`), dan `daftarDokumenter` (isi `FilmDokumenter`) — `vector<FilmAnimasi/FilmAksi/FilmDokumenter>` di C++, `List[...]` di Python, `ArrayList<...>` di Java. Pengecekan ID unik dan penampilan semua data dilakukan dengan mengecek/melewati ketiga array tersebut satu per satu.
+Data disimpan di **3 array/list terpisah sesuai jenisnya**: `daftarAnimasi` (isi `FilmAnimasi`), `daftarAksi` (isi `FilmAksi`), dan `daftarDokumenter` (isi `FilmDokumenter`) `vector<FilmAnimasi/FilmAksi/FilmDokumenter>` di C++, `List[...]` di Python, `ArrayList<...>` di Java. Pengecekan ID unik dan penampilan semua data dilakukan dengan mengecek/melewati ketiga array tersebut satu per satu.
 
 # ☕️ Class & Atribut
 
@@ -104,24 +104,24 @@ Data disimpan di **3 array/list terpisah sesuai jenisnya**: `daftarAnimasi` (isi
     - id_film : int — identifier unik, dicek agar tidak duplikat
     - judul : string
     - genre : string
-    - durasi : int (menit) — divalidasi tidak boleh negatif
-    - harga : int (rupiah) — divalidasi harus lebih dari 0
+    - durasi : int (menit) divalidasi tidak boleh negatif
+    - harga : int (rupiah) divalidasi harus lebih dari 0
     - jadwalTayang : JadwalTayang — composition, dibangun di constructor Film
 
 3. **FilmAnimasi** (extends Film)
     - studio_animasi : string
     - rating_usia : string (SU/13+/17+)
-    - frame_rate : int (fps) — divalidasi harus lebih dari 0
+    - frame_rate : int (fps) divalidasi harus lebih dari 0
 
 4. **FilmAksi** (extends Film)
     - koreografer_laga : string
     - tingkat_bahaya : string (Ringan/Sedang/Berat)
-    - jumlah_pemeran_pengganti : int — divalidasi tidak boleh negatif
+    - jumlah_pemeran_pengganti : int divalidasi tidak boleh negatif
 
 5. **FilmDokumenter** (extends Film)
     - sutradara_riset : string
     - subjek_dokumenter : string
-    - jumlah_narasumber : int — divalidasi tidak boleh negatif
+    - jumlah_narasumber : int divalidasi tidak boleh negatif
 
 # 🔁 Alur Program (berlaku untuk semua bahasa)
 
