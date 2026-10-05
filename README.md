@@ -47,15 +47,13 @@ Saya Muhammad Fadey Rafif dengan NIM 2504792 mengerjakan Tugas Praktikum 3 dalam
 Melanjutkan tema bioskop "Holo Cinema" dari tugas-tugas sebelumnya, sekarang  saya mendemonstrasikan dua konsep OOP baru: **Composition** dan **Hierarchical Inheritance**.
 
 Terdapat 5 class:
-1. **JadwalTayang** — class mandiri, dipakai lewat **composition** oleh `Film`.
-2. **Film** — kelas dasar (parent dari hierarchical inheritance).
-3. **FilmAnimasi** — turunan `Film`.
-4. **FilmAksi** — turunan `Film`.
-5. **FilmDokumenter** — turunan `Film`.
+1. **JadwalTayang** : class mandiri, dipakai lewat **composition** oleh `Film`.
+2. **Film** : kelas dasar (parent dari hierarchical inheritance).
+3. **FilmAnimasi** : turunan `Film`.
+4. **FilmAksi** : turunan `Film`.
+5. **FilmDokumenter** : turunan `Film`.
 
-`FilmAnimasi`, `FilmAksi`, dan `FilmDokumenter` sama-sama mewarisi langsung dari `Film` (sejajar satu sama lain, bukan berantai) — inilah **Hierarchical Inheritance**, berbeda dengan tugas sebelumnya yang multilevel (`Film -> FilmAnimasi -> Film2D`).
-
-Program dibuat dalam **C++ dan Python** (yang wajib), dan ditambah **Java** sebagai nilai tambah (hehe).
+`FilmAnimasi`, `FilmAksi`, dan `FilmDokumenter` sama-sama mewarisi langsung dari `Film` (sejajar satu sama lain, bukan berantai), inilah **Hierarchical Inheritance**, berbeda dengan tugas sebelumnya yang multilevel (`Film -> FilmAnimasi -> Film2D`).
 
 # Diagram Konsep
 
