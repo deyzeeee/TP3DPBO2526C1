@@ -1,5 +1,5 @@
 # JANJI
-Saya Muhammad Fadey Rafif dengan NIM 2504792 mengerjakan Tugas Praktikum (Composition & Hierarchical Inheritance) dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
+Saya Muhammad Fadey Rafif dengan NIM 2504792 mengerjakan Tugas Praktikum 3 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 # STRUKTUR FILE
 
@@ -26,7 +26,7 @@ Saya Muhammad Fadey Rafif dengan NIM 2504792 mengerjakan Tugas Praktikum (Compos
 │   │   ├── Main.py
 │   │   └── testcase.txt
 │   └── Dokumentasi/
-│       └── screenshot/screen record
+│       └── screenshot
 │
 ├── java/
 │   ├── Program/
@@ -38,7 +38,7 @@ Saya Muhammad Fadey Rafif dengan NIM 2504792 mengerjakan Tugas Praktikum (Compos
 │   │   ├── Main.java
 │   │   └── testcase.txt
 │   └── Dokumentasi/
-│       └── screenshot/screen record
+│       └── screenshot
 │
 └── README.md
 ```
@@ -59,7 +59,7 @@ Program dibuat dalam **C++ dan Python** (yang wajib), dan ditambah **Java** seba
 
 # Diagram Konsep
 
-<img src="Dokumentasi/diagram TP3.drawio.png" alt="diagram TP3">
+<img src="Dokumentasi/diagram TP3.png" alt="diagram TP3">
 <br>
 
 1. `JadwalTayang`
